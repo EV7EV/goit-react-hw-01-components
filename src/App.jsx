@@ -12,7 +12,7 @@ export const App = () => {
     <div
       style={{
         gap: '20px',
-        height: '100vh',
+        // height: '100vh',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
