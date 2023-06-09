@@ -6,15 +6,14 @@ const Statistics = ({ title, stats }) => {
     <SectionStyled>
       {title && <h2 className="title">{title}</h2>}
       <StatsList className="stat-list">
-        {stats &&
-          stats.map(({ id, label, percentage }) => {
-            return (
-              <li key={id} className="item">
-                <span className="label">{label}</span>
-                <span className="percentage">{percentage}</span>
-              </li>
-            );
-          })}
+        {stats.map(({ id, label, percentage }) => {
+          return (
+            <li key={id} className="item">
+              <span className="label">{label}</span>
+              <span className="percentage">{percentage}</span>
+            </li>
+          );
+        })}
       </StatsList>
     </SectionStyled>
   );
